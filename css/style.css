@@ -2,7 +2,7 @@
 
 * {
 	box-sizing: border-box;
-    margin: 0;
+	margin: 0;
 }
 
 html {
@@ -28,39 +28,143 @@ h3 {
 	color: #554d89;
 }
 
-.divider {
+.btn {
     border: none;
-    border-bottom: 1px solid #E1E4ED;
+    text-decoration: none;
+    height: 4rem;
+    border-radius: 4rem;
+    padding: 0 1.5rem;
+    font-family: "Poppins", sans-serif;
+}
+
+.btn-light {
+    background-color: transparent;
+    border: solid 1px #6852ED;
+    font-size: 1.4rem;
+    color: #6852ED;
+    transition: all 0.3s ease;
+}
+
+.btn-light:hover {
+    cursor: pointer;
+    color: #5b5766;
+    border: solid 1px #5b5766;
+
+}
+
+.divider {
+	border: none;
+	border-bottom: 1px solid #e1e4ed;
 }
 
 .wrapper {
-    width: 1146px;
-    margin: 0 auto;
+	width: 1146px;
+	margin: 0 auto;
 }
 
 .top-header {
-    display: flex;
-    justify-content: space-between;
-    padding: 2.4rem 0 1.7rem;
+	display: flex;
+	justify-content: space-between;
+	padding: 2.4rem 0;
 }
 
 .top-header__text {
-    color: #716C80;
-    font-size: 1.6rem;
+	color: #716c80;
+	font-size: 1.6rem;
 }
 
 .top-header__phone {
-    color: #716C80;
-    font-size: 1.6rem;
-    text-decoration: none;
+	color: #716c80;
+	font-size: 1.6rem;
+	text-decoration: none;
+    transition: all 0.3s ease;
 }
 
 .top-header__phone:hover {
-    border-bottom: 1px solid #716C80;
+	border-bottom: 1px solid #716c80;
 }
 
 .top-header__phone::before {
-    content: "\f879";
-    font-family: FontAwesome;
-    margin-right: 0.8rem;
+	content: "\f879";
+	font-family: FontAwesome;
+	margin-right: 0.8rem;
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	padding-top: 1rem;
+    align-items: center;
+}
+
+.header-navbar {
+	display: flex;
+	align-items: center;
+}
+
+.header__logo {
+	display: block;
+	margin-right: 5.8rem;
+}
+
+.header__menu {
+	display: flex;
+}
+
+.header__menu-item {
+	margin-right: 3rem;
+    position: relative;
+    padding: 1.8rem 0;
+    transition: all 0.3s ease;
+}
+
+.header__menu-item:last-child {
+	margin-right: 0;
+}
+
+.header__menu-item:hover .header__submenu {
+    display: block;
+}
+
+.header__submenu {
+	display: none;
+    position: absolute;
+    top: 5.4rem;
+    left: -3rem;
+    padding: 3rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 20px 0 #e1e4ed;
+    background-color: #fff;
+    transition: all 0.3s ease;
+}
+
+.header__submenu > .header__menu-item {
+    padding: 0;
+    margin-bottom: 1rem;
+}
+
+.header__submenu > .header__menu-item:last-child {
+    margin-bottom: 0;
+}
+
+.header__menu-link {
+	color: #5b5766;
+	font-size: 1.6rem;
+	text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.header__menu-link:hover {
+	color: #554d89;
+    text-shadow: 0 0 0.5px #554d89;
+}
+
+.header__menu-link_active {
+	color: #554d89;
+	font-weight: 700;
+}
+
+.header-actions__text {
+    display: inline-block;
+    margin: 0 0.5rem;
 }
