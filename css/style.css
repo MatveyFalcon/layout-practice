@@ -109,6 +109,7 @@ h3 {
 
 .header__menu {
 	display: flex;
+    padding: 0;
 }
 
 .header__menu-item {
