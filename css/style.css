@@ -255,3 +255,65 @@ h3 {
 .btn-bottom:hover {
 	background-color: #5a44d6;
 }
+
+.features {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 10rem;
+}
+
+.infoblock {
+	width: 360px;
+	border-radius: 1rem;
+	box-shadow: 0 0 20px 0 #e1e4ed;
+	background-color: #fff;
+	padding: 3rem;
+	transition: all 0.3s ease;
+}
+
+.infoblock:hover {
+	box-shadow: 0 0 20px 0 rgba(104, 82, 237, 0.8);
+	background-image: linear-gradient(to top, #6852ed, #ba43fc);
+	cursor: pointer;
+}
+
+.infoblock > i {
+	color: #6852ed;
+	font-size: 3.2rem;
+	margin-bottom: 3rem;
+}
+
+.infoblock__title {
+	font-size: 2.2rem;
+	margin-bottom: 1.9rem;
+}
+
+.infoblock__text {
+	color: #716c80;
+}
+
+.infoblock__link {
+	display: none;
+	color: #fff;
+	margin-top: 3rem;
+}
+
+.infoblock__link:hover {
+	border-bottom: none;
+}
+
+.infoblock:hover .fa-solid {
+	display: none;
+}
+
+.infoblock:hover .infoblock__title {
+	color: #fff;
+}
+
+.infoblock:hover .infoblock__text {
+	color: #fff;
+}
+
+.infoblock:hover .infoblock__link {
+	display: inline-block;
+}
