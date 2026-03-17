@@ -137,8 +137,9 @@ h3 {
 }
 
 .header__logo {
-	display: block;
+	display: flex;
 	margin-right: 5.8rem;
+	align-items: center;
 }
 
 .header__menu {
@@ -210,6 +211,10 @@ h3 {
 	align-items: center;
 	margin-top: 10rem;
 	position: relative;
+}
+
+.stage > img {
+	width: 65%;
 }
 
 .stage__content {
@@ -316,4 +321,37 @@ h3 {
 
 .infoblock:hover .infoblock__link {
 	display: inline-block;
+}
+
+.article {
+	margin-top: 10rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 10rem;
+}
+
+.article__img,
+.article__content {
+	width: 50%;
+	flex-shrink: 0;
+}
+
+.article__content {
+	padding-left: 6rem;
+}
+
+.article__title {
+	font-size: 2.8rem;
+	margin-bottom: 3rem;
+	width: 412px;
+}
+
+.article__text {
+	color: #716c80;
+	margin-bottom: 5rem;
+}
+
+.article .btn {
+	margin-right: 3rem;
 }
