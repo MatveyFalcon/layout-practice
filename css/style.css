@@ -172,6 +172,7 @@ h3 {
 	box-shadow: 0 0 20px 0 #e1e4ed;
 	background-color: #fff;
 	transition: all 0.3s ease;
+	z-index: 1;
 }
 
 .header__submenu > .header__menu-item {
